@@ -1,0 +1,268 @@
+<style>
+    h1{
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Nunito Sans',sans-serif;
+    }
+    .navigation a{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:7px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    background-color: hsl(0, 25%, 53%);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    border-radius: 25px;
+}
+#logo{
+    width:15%;
+    transform: translate(5%,-15%);
+}
+.navigation a:hover{
+    background-color: hsl(172, 25%, 53%);
+    transition: 0.5s ease-in-out ;
+}
+.content p{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    transform: translateY(-150%);
+    animation-name: again;
+    animation-duration: 3s;
+    animation-direction: backwards;
+
+}
+.navigation{
+    float:right;
+transform: translateY(35%);
+}
+p{
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+
+    body{
+      margin: 0;
+      padding: 0;
+
+      height: 100vh;
+      overflow: hidden;
+    }
+    .center{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-45%, -40.5%);
+      width: 388px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+      height: 550px;
+    }
+    .center h1{
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid silver;
+      font-family: "Poppins",sans-serif;
+      font-size: 40px;
+    }
+    .center form{
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+    form .txt_field{
+      position: relative;
+      border-bottom: 2px solid #adadad;
+      margin: 30px 0;
+    }
+    .txt_field input{
+      width: 100%;
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .txt_field textarea{
+      width: 100%;
+      padding: 0 5px;
+      height: 150px;
+      font-size: 16px;
+      border: 0.2px solid block;
+      background: none;
+
+    }
+textarea::placeholder{
+color:#4f666a;
+transform: translateY(290%);
+opacity: 0.5;
+font-family: "Lato",sans-serif;
+letter-spacing: 1px;
+text-align: center;
+    }
+    .txt_field label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #adadad;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+      transition: .5s;
+    }
+
+    .txt_field span::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background:#21201e;
+      transition: .5s;
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+      top: -5px;
+      color:#21201e;
+    }
+    .txt_field input:focus ~ span::before,
+    .txt_field input:valid ~ span::before{
+      width: 100%;
+    }
+    .pass{
+      margin: -5px 0 20px 5px;
+      color: #a6a6a6;
+      cursor: pointer;
+    }
+    .pass:hover{
+      text-decoration: underline;
+    }
+    input[type="submit"]{
+      width: 100%;
+      height: 50px;
+      border:none;
+      background: olive;
+      border-radius: 25px;
+      font-size: 18px;
+      color:#ffffff;
+
+      font-family: "Lato",sans-serif;
+      cursor: pointer;
+      outline: none;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    input[type="submit"]:hover{
+background-color: olivedrab;
+      transition: .5s;
+      font-family: "Lato", sans-serif;
+    }
+    .signup_link{
+      margin: 30px 0;
+      text-align: center;
+      font-size: 16px;
+      color:green;
+      font-family: "Lato", sans-serif;
+      font-family: 600;
+    }
+    .signup_link a{
+      color: #000000;
+      text-decoration: none;
+    }
+    .signup_link a:hover{
+      text-decoration: underline;
+    }
+body{
+  background-color: whitesmoke;
+}
+
+label{
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px
+}
+#logo1{
+  position: absolute;
+  stroke-dasharray:1000;
+  stroke-dashoffset:1000;
+  animation: line-ani 3s ease forwards;
+top:12px;
+left:10px;
+padding-left:0px;
+}
+
+@keyframes line-ani{
+from{
+stroke-dashoffset:1000;
+fill:transparent;
+}
+to{
+stroke-dashoffset:0;
+fill:#ffd302;
+
+}
+}
+p{
+    transform: translateY(-550%);
+}
+
+
+</style>
+<html>
+     <!-- Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <body>
+        <!--Navigation Bar over here-->
+    <a href = "index.php">
+    <img id = "logo" src = "IMG/LOGO.png" alt = "LOGO">
+</a>
+    <div class="navigation">
+
+    
+    <a href = "index.php">Home</a>
+        <a href = "test.html">Problem</a>
+        <a href = "idea.html">Idea</a>
+    <a href = "signup.php">Signup</a>
+    <a href = "#contact">Contact</a>
+</div>
+
+        <h1 class = "cont">Contact Me</h1>
+        <p>Hi! I am Prajwal, I am 15 years old
+        I've used PHP and MySql for the development of the platform, Sustaina</p>
+        <div class="center">
+            <h1>Contact Me</h1>
+            <form action="index.php" method="POST">
+              <div class="txt_field">
+                <input type="email" required name = "email" id = "email">
+                <span></span>
+                <label>Email</label>
+              </div>
+              <div class="txt_field">
+                <input type="text" required name = "username" id = "username" type = "text">
+                <span></span>
+                <label>Name</label>
+              </div>
+              <div class="txt_field">
+                <textarea type="text"name = "message" id = "message" required placeholder="Your Message"></textarea>
+                <span></span>
+      
+              </div>
+      <div id = "sub">
+              <input type = "submit" id = "button"  value = "Send">
+      </div>
+            </form>
+          </div>
+      
+    </body>
+</html>
