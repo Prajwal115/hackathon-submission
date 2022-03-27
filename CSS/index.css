@@ -1,0 +1,90 @@
+body{
+    background-color: #36454F;
+    background-image: url('IMG/home.PNG');
+    background-size: contain;
+}
+h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 90px;
+    color:white;
+    padding-top: 20px;
+    text-align: center;
+animation-name: enter;
+animation-duration: 3s;
+position: relative;
+}
+.navigation{
+    float:right;
+transform: translateY(35%);
+}
+.navigation a{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:7px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    background-color: hsl(0, 25%, 53%);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    border-radius: 25px;
+}
+#logo{
+    width:15%;
+    transform: translateY(-20%);
+}
+.navigation a:hover{
+    background-color: hsl(172, 25%, 53%);
+    transition: 0.5s ease-in-out ;
+}
+.content p{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    transform: translateY(-180%);
+    animation-name: again;
+    animation-duration: 3s;
+    animation-direction: backwards;
+
+}
+@keyframes enter{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes again{
+    from{
+        width:30%;
+color:#36454F;
+    }
+    to{
+        width:100%;
+display: block;
+color:whitesmoke;
+    }
+}
+
+#problem{
+transform: translateY(50%);
+background-image: url('IMG/problem.gif');
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    text-align: center;
+    font-family: "Nunito Sans",sans-serif;
+    font-size: 50px;
+    animation-duration: 5s;
+    animation-name:enter;
+    position: relative;
+}
+p{
+    color:black;
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+}
